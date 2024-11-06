@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin:0;
+        }
+        .main{
+            border:5px solid red;
+            width:60%;
+            height:60vh;
+            transform:translate(250px,100px);
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-evenly;
+            align-content:center;
+            border-radius:10px;
+
+        }
+        .main1{
+            border:1px solid green;
+            width:230px;
+            height:300px;
+            border-radius:10px;
+            text-align:center;
+            align-content:center;
+            font-family:papyrus;
+            color:white;
+        }
+        h1{
+            text-align:center;
+            color:lightseagreen;
+            font-size:50px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+
+
+        }
+        .main1:hover{
+            color:yellow;
+           background-color:navy;
+            font-family:verdana;
+          
+            
+        }
+        body{
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <div><h1><marquee>Functions</marquee></h1></div>
+    <div class="main">
+        <div class="main1">
+            <p>function demo(num){<br>
+                       if(num%2==0){<br>
+                           console.log("even")<br>
+                       }<br>
+                       else{<br>
+                           console.log("odd")<br>
+                       }<br>
+            
+                   }<br>
+                   demo(10 )<br></p>
+        </div>
+        <div class="main1">
+            <p>function demo<BR>(str = "madam",str1 = "") {<br>
+                for (i = str.length - 1; i >= 0; i--) {<br>
+                  str1 += str[i];<br>
+                }<br>
+                if (str == str1) {<br>
+                  console.log("palindrome");<br>
+                } else {<br>
+                  console.log("not an plaindrome");<br>
+                }<br>
+              }<br>
+              demo()</p>
+        </div>
+
+        <div class="main1">
+            <p>function largest(n1=11,n2=10,n3=5){<br>
+                if(n1>n2 && n2>n3){<br>
+                    console.log(`largest value is:${n1}`)<br>
+                }<br>
+                else{<br>
+                    console.log(`smallest`)<br>
+                }<br>
+            }<br>
+            largest()</p>
+        </div>
+
+
+    </div>
+</body>
+</html>
